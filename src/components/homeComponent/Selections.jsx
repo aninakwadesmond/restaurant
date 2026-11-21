@@ -20,7 +20,7 @@ function Selections() {
         heading="Browse by cusine"
         action="explore all"
       />
-      <div className="grid w-full grid-cols-2 items-center  gap-y-8 justify-items-center-safe md:grid-cols-3 gap-x-4">
+      <div className="grid w-full grid-cols-2 items-center  gap-y-8 justify-items-center-safe md:grid-cols-3 gap-x-6">
         <Category icon={faUtensilSpoon} title="italian" />
         <Category icon={faFish} title="sushi" />
         <Category icon={faShrimp} title="french " />
