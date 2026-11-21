@@ -1,7 +1,9 @@
 import About from '../components/homeComponent/About';
+import Footer from '../components/homeComponent/Footer';
 import Hero from '../components/homeComponent/Hero';
 import Navigation from '../components/homeComponent/Navigation';
 import Selections from '../components/homeComponent/Selections';
+import Subscirbe from '../components/homeComponent/Subscirbe';
 import Trending from '../components/homeComponent/Trending';
 
 function Home() {
@@ -15,6 +17,8 @@ function Home() {
       <Selections />
       <Trending />
       <About />
+      <Subscirbe />
+      <Footer />
     </div>
   );
 }
