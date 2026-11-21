@@ -2,10 +2,23 @@
 
 @layer base {
   html {
-    @apply overflow-x-hidden bg-black/2;
+    @apply overflow-x-hidden bg-black/2  scroll-smooth;
   }
   ,
   body {
     @apply overflow-x-hidden bg-red-700;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .smooth-scroll {
+    scroll-behaviour: smooth;
   }
 }

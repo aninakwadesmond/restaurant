@@ -15,14 +15,14 @@ function Trending() {
           title="italian"
           heading="Terraza Cilco"
           location="Manhattan,NY"
-          slots={[17, 18, 19]}
+          slots={[17, 18]}
         />
         <DiningItem
           image="/restaurant_1.png"
           title="french"
           heading="L'Essence"
           location="Manhattan,NY"
-          slots={[18, 19, 20]}
+          slots={[18, 19]}
         />
         <DiningItem
           image="/restaurant_2.jpg"

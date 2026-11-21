@@ -6,7 +6,7 @@ import Trending from '../components/homeComponent/Trending';
 
 function Home() {
   return (
-    <div className="w-full flex flex-col items-start gap-y-32">
+    <div className="w-full flex flex-col items-start gap-y-32 no-scrollbar smooth-scroll">
       <div className="w-screen h-screen py-4 px-6 relative flex flex-col items-center justify-center ">
         <HeroImage />
         <Navigation />
@@ -26,7 +26,7 @@ function HeroImage() {
       <img
         src="hero_bg_img.png"
         alt="bgImage"
-        className="w-screen min-h-screen bg-cover object-cer"
+        className="w-screen min-h-screen object-cover"
       />
     </div>
   );

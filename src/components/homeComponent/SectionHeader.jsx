@@ -12,15 +12,15 @@ export function SectionHeader({ title, heading, action }) {
         <h2 className="tracking-wide text-2xl font-bold text-black/90">
           {heading}
         </h2>
-        <div className="flex items-center gap-2">
-          <p className=" font-bold tracking-[.2rem]  uppercase text-[.6rem] text-amber-900 cursor-pointer">
-            {action}
-          </p>
-          <FontAwesomeIcon
-            icon={faArrowRight}
-            className="text-[.6rem] text-amber-900"
-          />
-        </div>
+      </div>
+      <div className="flex items-center gap-2 justify-end w-full">
+        <p className=" font-bold tracking-[.2rem]  uppercase text-[.6rem] text-amber-900 cursor-pointer">
+          {action}
+        </p>
+        <FontAwesomeIcon
+          icon={faArrowRight}
+          className="text-[.6rem] text-amber-900"
+        />
       </div>
     </div>
   );
