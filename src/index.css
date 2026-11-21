@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@layer base {
+  html {
+    @apply overflow-x-hidden bg-black/2;
+  }
+  ,
+  body {
+    @apply overflow-x-hidden bg-red-700;
+  }
+}
