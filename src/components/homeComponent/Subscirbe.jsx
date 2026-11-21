@@ -2,10 +2,10 @@ function Subscirbe() {
   return (
     <div className="flex flex-col h-100 bg-black/90 items-center justify-center w-full">
       <div className="flex flex-col items-center justify-center gap-3 w-[80%]">
-        <h3 className="text-[1.4rem] tracking-wide text-white">
-          Join the Culinary Inner Cirlce{' '}
+        <h3 className="text-[1.1rem] tracking-wide text-white">
+          Join the Culinary Inner Cirlce
         </h3>
-        <p className="text-white/50 text-sm font-semibold tracking-[.2rem] text-center">
+        <p className="text-white/50 text-sm font-semibold tracking-[.2rem] text-center text-[.8rem]">
           Subscribe to receive first access to new openings and seasonal tasting
           menus.
         </p>
