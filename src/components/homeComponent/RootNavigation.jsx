@@ -8,7 +8,7 @@ function RootNavigation() {
   const isSearchLocation = location?.pathname === '/search';
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full  no-scrollbar smooth-scroll">
       <div className="flex items-center justify-between w-full container absolute top-0 left-0 py-4 px-6">
         <Link className=" max-w-1/2" to={'/'}>
           <img
