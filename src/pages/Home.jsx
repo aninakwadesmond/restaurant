@@ -1,7 +1,7 @@
 import About from '../components/homeComponent/About';
 import Footer from '../components/homeComponent/Footer';
 import Hero from '../components/homeComponent/Hero';
-import Navigation from '../components/homeComponent/Navigation';
+
 import Selections from '../components/homeComponent/Selections';
 import Subscirbe from '../components/homeComponent/Subscirbe';
 import Trending from '../components/homeComponent/Trending';
@@ -11,7 +11,7 @@ function Home() {
     <div className="w-full flex flex-col items-start gap-y-32 no-scrollbar smooth-scroll">
       <div className="w-screen h-screen py-4 px-6 relative flex flex-col items-center justify-center ">
         <HeroImage />
-        <Navigation />
+
         <Hero />
       </div>
       <Selections />

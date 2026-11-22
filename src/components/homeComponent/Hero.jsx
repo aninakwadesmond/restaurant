@@ -1,9 +1,6 @@
 import {
   faCalendar,
   faChevronDown,
-  faLandmark,
-  faLocation,
-  faMap,
   faSearch,
   faUserGroup,
 } from '@fortawesome/free-solid-svg-icons';

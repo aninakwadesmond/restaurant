@@ -1,5 +1,6 @@
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 export function SectionHeader({ title, heading, action }) {
   return (
@@ -13,7 +14,7 @@ export function SectionHeader({ title, heading, action }) {
           {heading}
         </h2>
       </div>
-      <div className="flex items-center gap-2 justify-end w-full">
+      <Link to="/search" className="flex items-center gap-2 justify-end w-full">
         <p className=" font-bold tracking-[.2rem]  uppercase text-[.6rem] text-amber-900 cursor-pointer">
           {action}
         </p>
@@ -21,7 +22,7 @@ export function SectionHeader({ title, heading, action }) {
           icon={faArrowRight}
           className="text-[.6rem] text-amber-900"
         />
-      </div>
+      </Link>
     </div>
   );
 }
