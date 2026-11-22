@@ -13,8 +13,8 @@ import Footer from '../components/homeComponent/Footer';
 
 function Restaurants() {
   return (
-    <div className="w-full flex flex-col gap-y-20 ">
-      <div className="w-screen pt-18  flex flex-col gap-y-4 shadow-md pb-5  px-6 no-scrollbar smooth-scroll">
+    <div className="w-full flex flex-col gap-y-20 bg-amber-900">
+      <div className=" pt-18  flex flex-col gap-y-4 shadow-md pb-5  px-6 no-scrollbar smooth-scroll">
         <SearchBar icon={faSearch} placeholder="Search cuisine or name..." />
         <div className="flex items-center gap-8 w-full">
           <SearchBar icon={faLocationDot} placeholder={'Location...'} />
@@ -85,7 +85,7 @@ function Restaurants() {
 function RestaurantHeader() {
   const sortRef = useRef();
   return (
-    <div className="flex items-center justify-between w-sceen px-6 gap-8">
+    <div className="flex items-center justify-between  px-6 gap-8">
       <p className="font-semibold tracking-tight capitalize text-black/70 text[.8rem]">
         8 Restaurants Available
       </p>
