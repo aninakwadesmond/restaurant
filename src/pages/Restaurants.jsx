@@ -12,10 +12,11 @@ import DiningItem from '../components/homeComponent/DiningItem';
 import Footer from '../components/homeComponent/Footer';
 import { useSelector } from 'react-redux';
 
+// className="w-full flex flex-col gap-y-20 bg-amber-800  min-w-0 px-0 "
 function Restaurants() {
   const { dropdown } = useSelector((state) => state.home);
   return (
-    <div className="w-full flex flex-col gap-y-20 ">
+    <div className="w-full flex flex-col items-start gap-y-32 no-scrollbar smooth-scroll">
       {!dropdown && (
         <div className=" mt-14  flex flex-col gap-y-4 shadow-md pb-5  px-6  fixed w-full z-10   pt-6 bg-white">
           <SearchBar icon={faSearch} placeholder="Search cuisine or name..." />
@@ -30,7 +31,7 @@ function Restaurants() {
       )}
       <RestaurantHeader />
 
-      <div className="flex flex-col items-start gap-6 w-full px-6 ">
+      <div className="grid grid-cols-1 items-start gap-6  px-6 w-full justify-self-center bg-red-600 min-w-0 ">
         <DiningItem
           image="/default_restaurant_Img.jpeg"
           title="italian"
