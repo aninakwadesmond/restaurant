@@ -10,20 +10,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRef } from 'react';
 import DiningItem from '../components/homeComponent/DiningItem';
 import Footer from '../components/homeComponent/Footer';
+import { useSelector } from 'react-redux';
 
 function Restaurants() {
+  const { dropdown } = useSelector((state) => state.home);
   return (
-    <div className="w-screen flex flex-col gap-y-20 ">
-      <div className=" mt-16  flex flex-col gap-y-4 shadow-md pb-5  px-6  fixed w-full z-10  bg-white">
-        <SearchBar icon={faSearch} placeholder="Search cuisine or name..." />
-        <div className="flex items-center gap-8 w-full">
-          <SearchBar icon={faLocationDot} placeholder={'Location...'} />
-          <ButtonUpdate name="UPDATE" style="text-amber-50 bg-black" />
+    <div className="w-full flex flex-col gap-y-20 ">
+      {!dropdown && (
+        <div className=" mt-14  flex flex-col gap-y-4 shadow-md pb-5  px-6  fixed w-full z-10   pt-6 bg-white">
+          <SearchBar icon={faSearch} placeholder="Search cuisine or name..." />
+          <div className="flex items-center gap-8 w-full">
+            <SearchBar icon={faLocationDot} placeholder={'Location...'} />
+            <ButtonUpdate name="UPDATE" style="text-amber-50 bg-black" />
+          </div>
+          <div className="flex items-center justify-end w-full ">
+            <ButtonUpdate name="Filters" icon={faFilter} />
+          </div>
         </div>
-        <div className="flex items-center justify-end w-full ">
-          <ButtonUpdate name="Filters" icon={faFilter} />
-        </div>
-      </div>
+      )}
       <RestaurantHeader />
 
       <div className="flex flex-col items-start gap-6 w-full px-6 ">

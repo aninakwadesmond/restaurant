@@ -25,7 +25,7 @@ function RootNavigation() {
   return (
     <div className="relative  no-scrollbar smooth-scroll w-screen   ">
       <div className="flex flex-col  top-0 left-0 z-10 bg-white fixed">
-        <div className="flex items-center justify-between w-full container  py-4 px-6 ">
+        <div className="flex items-center justify-between w-full container  py-4 px-6  ">
           <Link className=" max-w-1/2" to={'/'}>
             <img
               src="/logo.svg"
