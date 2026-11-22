@@ -85,7 +85,7 @@ function Restaurants() {
 function RestaurantHeader() {
   const sortRef = useRef();
   return (
-    <div className="flex items-center justify-between w-full px-6 gap-8">
+    <div className="flex items-center justify-between w-sceen px-6 gap-8">
       <p className="font-semibold tracking-tight capitalize text-black/70 text[.8rem]">
         8 Restaurants Available
       </p>
