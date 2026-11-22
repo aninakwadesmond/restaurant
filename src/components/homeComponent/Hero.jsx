@@ -7,16 +7,17 @@ import {
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons/faLocationDot';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRef, useState } from 'react';
+import Button from './Button';
 
 function Hero() {
   return (
     <div className="flex flex-col gap-y-6">
       <div className="w-full flex flex-col  items-center justify-center gap-y-6 ">
-        <p className="font-semibold text-yellow-600 tracking-widest text-xl uppercase">
+        <p className="font-semibold text-yellow-600 tracking-widest text-[.9rem] uppercase">
           exquisite dining experience
         </p>
         <div className="w-6/7">
-          <p className="text-center font-semibold text-4xl  tracking-wide text-white">
+          <p className="text-center font-semibold text-[1.5rem]  tracking-wide text-white">
             Curation for the Discerning Palette
           </p>
         </div>
@@ -32,18 +33,9 @@ function Hero() {
         />
         <SetDate />
         <SelectNumberofGuest />
-        <ButtonFindTable />
+        {/* <ButtonFindTable /> */}
+        <Button style={'bg-black text-white'} title="find a table" />
       </div>
-    </div>
-  );
-}
-
-function ButtonFindTable() {
-  return (
-    <div className="w-full px-4 py-4 shadow-lg bg-black text-white mt-2 flex flex-col items-center justify-center">
-      <button className="uppercase text-[.8rem] font-semibold tracking-widest">
-        find a table
-      </button>
     </div>
   );
 }

@@ -13,8 +13,8 @@ import Footer from '../components/homeComponent/Footer';
 
 function Restaurants() {
   return (
-    <div className="w-full flex flex-col gap-y-20 ">
-      <div className=" pt-18  flex flex-col gap-y-4 shadow-md pb-5  px-6 no-scrollbar smooth-scroll">
+    <div className="w-screen flex flex-col gap-y-20 ">
+      <div className=" mt-16  flex flex-col gap-y-4 shadow-md pb-5  px-6  fixed w-full z-10  bg-white">
         <SearchBar icon={faSearch} placeholder="Search cuisine or name..." />
         <div className="flex items-center gap-8 w-full">
           <SearchBar icon={faLocationDot} placeholder={'Location...'} />
@@ -26,7 +26,7 @@ function Restaurants() {
       </div>
       <RestaurantHeader />
 
-      <div className="flex flex-col items-start gap-6 w-full px-6">
+      <div className="flex flex-col items-start gap-6 w-full px-6 ">
         <DiningItem
           image="/default_restaurant_Img.jpeg"
           title="italian"
@@ -85,7 +85,7 @@ function Restaurants() {
 function RestaurantHeader() {
   const sortRef = useRef();
   return (
-    <div className="flex items-center justify-between  px-6 gap-8">
+    <div className="flex items-center justify-between  px-6 gap-8 pt-80">
       <p className="font-semibold tracking-tight capitalize text-black/70 text[.8rem]">
         8 Restaurants Available
       </p>
