@@ -13,7 +13,7 @@ import Footer from '../components/homeComponent/Footer';
 
 function Restaurants() {
   return (
-    <div className="w-full flex flex-col gap-y-20 bg-amber-900">
+    <div className="w-full flex flex-col gap-y-20 ">
       <div className=" pt-18  flex flex-col gap-y-4 shadow-md pb-5  px-6 no-scrollbar smooth-scroll">
         <SearchBar icon={faSearch} placeholder="Search cuisine or name..." />
         <div className="flex items-center gap-8 w-full">
