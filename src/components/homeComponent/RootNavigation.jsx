@@ -9,6 +9,7 @@ import { Outlet, useLocation, Link } from 'react-router-dom';
 import Dropdown from './Dropdown';
 import { useDispatch, useSelector } from 'react-redux';
 import { setDropdown } from '../../stores/HomeSlice';
+import Signin from '../logins/Signin';
 
 function RootNavigation() {
   const location = useLocation();
@@ -40,11 +41,13 @@ function RootNavigation() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-    dispatch(setDropdown(false));
+    // dispatch(setDropdown('false'));
   }, [pathname]);
 
   return (
-    <div className={`relative  no-scrollbar smooth-scroll w-screen  `}>
+    <div
+      className={`relative  no-scrollbar smooth-scroll w-full  container overflow-x-hidden`}
+    >
       <div
         className={`flex flex-col  top-0 left-0 z-30  fixed ${showModal ? 'blur-xs' : ''} ${isScrolled ? 'bg-white shadow-sm' : 'bg-transparent'} transition-all duration-300 ease-in-out shadow-sm`}
       >
@@ -70,6 +73,7 @@ function RootNavigation() {
       </div>
 
       <Outlet />
+      {showModal && <Signin />}
     </div>
   );
 }

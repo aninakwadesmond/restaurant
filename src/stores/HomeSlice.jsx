@@ -7,7 +7,7 @@ const HomeSlice = createSlice({
   reducers: {
     setDropdown: (state, action) => {
       if (action.payload) {
-        state.dropdown = action.payload;
+        state.dropdown = false;
         return;
       }
       state.dropdown = !state.dropdown;

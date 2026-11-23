@@ -19,10 +19,10 @@ function Restaurants() {
   const { dropdown } = useSelector((state) => state.home);
   const { showModal } = useSelector((state) => state.home);
 
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(setDropdown(false));
-  }, []);
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(setDropdown('false'));
+  // }, []);
   return (
     <>
       <div
@@ -98,7 +98,7 @@ function Restaurants() {
 
         <Footer />
       </div>
-      {showModal && <Signin />}
+      {/* {showModal && <Signin />} */}
     </>
   );
 }

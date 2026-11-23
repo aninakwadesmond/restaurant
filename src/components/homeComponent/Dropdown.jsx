@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom';
 import Button from './Button';
 import { useDispatch } from 'react-redux';
-import { setShowModal } from '../../stores/HomeSlice';
+import { setDropdown, setShowModal } from '../../stores/HomeSlice';
 
 function Dropdown() {
   const dispatch = useDispatch();
 
   function handleShowModal() {
     dispatch(setShowModal());
+    handleDropModal();
   }
 
   function handleDropModal() {
-    dispatch(setShowModal(false));
+    dispatch(setDropdown('false'));
   }
   return (
     <div className="w-full h-80  flex flex-col gap-8   px-6 py-5 shadow-md z-40 bg-white  ">

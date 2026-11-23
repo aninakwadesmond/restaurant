@@ -11,7 +11,7 @@ import Button from './Button';
 
 function Hero() {
   return (
-    <div className="flex flex-col gap-y-6">
+    <div className="flex flex-col gap-y-6 min-w-0 w-full ">
       <div className="w-full flex flex-col  items-center justify-center gap-y-6 ">
         <p className="font-semibold text-yellow-600 tracking-widest text-[.9rem] uppercase">
           exquisite dining experience

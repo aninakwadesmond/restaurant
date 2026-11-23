@@ -35,12 +35,12 @@ function Signin() {
   }, []);
 
   return (
-    <div className="w-screen h-screen overflow-hidden flex flex-col items-center justify-center  fixed top-0 left-0 right-0 bottom-0 z-20">
+    <div className="w-screen h-screen overflow-hidden flex flex-col items-center justify-center  fixed top-0 left-0 right-0 bottom-0 z-40">
       <div
-        className="w-screen h-screen overflow-hidden flex flex-col items-center justify-center fixed top-0 left-0 right-0 bottom-0 bg-black/80 z-30  "
+        className="w-screen h-screen overflow-hidden flex flex-col items-center justify-center fixed top-0 left-0 right-0 bottom-0 bg-black/80 z-40  "
         ref={containerClose}
       ></div>
-      <div className="bg-white shadow-md flex flex-col items-start justify-center w-9/10 rounded-md z-40">
+      <div className="bg-white shadow-md flex flex-col items-start justify-center w-9/10 rounded-md z-50">
         <div className="flex items-center justify-between w-full ">
           <SignType title="Sign in" />
           <SignType title="Sign up" />

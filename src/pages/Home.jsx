@@ -10,13 +10,13 @@ import { useDispatch } from 'react-redux';
 import { setDropdown } from '../stores/HomeSlice';
 
 function Home() {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(setDropdown(false));
-  }, []);
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(setDropdown('false'));
+  // }, []);
   return (
-    <div className="w-full flex flex-col items-start gap-y-32 no-scrollbar smooth-scroll">
-      <div className="w-screen h-screen py-4 px-6 relative flex flex-col items-center justify-center ">
+    <div className="w-full flex flex-col items-start gap-y-32 no-scrollbar smooth-scroll min-w-0">
+      <div className="w-full h-screen py-4 px-6 relative flex flex-col items-center justify-center min-w-0">
         <HeroImage />
 
         <Hero />
