@@ -1,9 +1,13 @@
 import { faLocationDot, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 function DiningItem({ image, title, heading, location, slots = [] }) {
   return (
-    <div className="w-full rounded-md shadow-lg bg-white ">
+    <Link
+      to={`/details/${slots[Math.ceil(Math.random() * Number(slots.length))]}`}
+      className="w-full rounded-md shadow-lg bg-white "
+    >
       <div className="w-full h-80 rounded-t-sm overflow-hidden relative">
         <img
           src={image}
@@ -53,7 +57,7 @@ function DiningItem({ image, title, heading, location, slots = [] }) {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

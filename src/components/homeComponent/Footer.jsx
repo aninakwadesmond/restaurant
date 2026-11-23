@@ -8,7 +8,7 @@ function Footer() {
     <div className="flex flex-col w-full gap-3 px-6">
       <div className="flex flex-col items-start justify-start gap-2">
         <div className="max-w-50  ">
-          <img src="./logo.svg" alt="logo" className="w-full object-cover " />
+          <img src="/logo.svg" alt="logo" className="w-full object-cover " />
         </div>
         <p className="text-black/70 font-semibold ">
           Connecting discerning palates with the world's most exceptional

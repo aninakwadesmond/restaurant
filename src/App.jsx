@@ -4,6 +4,7 @@ import RootNavigation from './components/homeComponent/RootNavigation';
 import Restaurants from './pages/Restaurants';
 import { Provider } from 'react-redux';
 import store from './stores/store';
+import Details from './pages/Details';
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: 'search', element: <Restaurants /> },
+      { path: 'details/:id', element: <Details /> },
     ],
   },
 ]);

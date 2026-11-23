@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import About from '../components/homeComponent/About';
 import Footer from '../components/homeComponent/Footer';
 import Hero from '../components/homeComponent/Hero';
@@ -5,8 +6,14 @@ import Hero from '../components/homeComponent/Hero';
 import Selections from '../components/homeComponent/Selections';
 import Subscirbe from '../components/homeComponent/Subscirbe';
 import Trending from '../components/homeComponent/Trending';
+import { useDispatch } from 'react-redux';
+import { setDropdown } from '../stores/HomeSlice';
 
 function Home() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(setDropdown(false));
+  }, []);
   return (
     <div className="w-full flex flex-col items-start gap-y-32 no-scrollbar smooth-scroll">
       <div className="w-screen h-screen py-4 px-6 relative flex flex-col items-center justify-center ">
