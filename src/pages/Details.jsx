@@ -14,6 +14,7 @@ import { faUserGroup } from '@fortawesome/free-solid-svg-icons/faUserGroup';
 import { useEffect, useRef, useState } from 'react';
 import Button from '../components/homeComponent/Button';
 import Footer from '../components/homeComponent/Footer';
+import { useNavigate } from 'react-router-dom';
 // import { useLocation } from 'react-router-dom';
 
 function Details() {
@@ -24,8 +25,14 @@ function Details() {
     bookingDate: '22/11/2026',
   });
 
+  const navigate = useNavigate();
+
   function onSetUser(field, value) {
     setUser((user) => ({ ...user, [field]: value }));
+  }
+
+  function handleOrder() {
+    navigate('/booking/1');
   }
   return (
     <div className="mt-16 flex flex-col gap-6  w-full">
@@ -80,11 +87,11 @@ function Details() {
         <Review name="Marcus vance" date="08/06/2026/" rating={4} />
         <Review name="sophia loren" date="05/06/2026/" rating={5} />
       </div>
-      <div className="w-full shadow-md shadow-black/40 rounded-md  flex flex-col gap-7 py-6 mx-6 px-6">
-        <h3 className="font-semibold text-black tracking-wide text-[1.3rem]">
+      <div className="w-full shadow-md shadow-black/40 rounded-md  flex flex-col gap-7 py-6 mx-6 px-6 mr-20">
+        <h3 className="font-semibold text-black tracking-wide text-[1.3rem] ">
           Book a Table
         </h3>
-        <div className="flex flex-col gap-6 w-full">
+        <div className="flex flex-col gap-6 w-full  ">
           <SelecUserBoard
             ref={selectRef}
             user={user}
@@ -100,7 +107,11 @@ function Details() {
           />
           <AvailableTImes />
 
-          <Button title="reserve now" style="bg-black/95 text-white" />
+          <Button
+            title="reserve now"
+            style="bg-black/95 text-white"
+            onHandleOrder={handleOrder}
+          />
           <OrderRight />
         </div>
       </div>
