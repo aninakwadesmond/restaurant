@@ -88,7 +88,7 @@ function Details() {
         <Review name="sophia loren" date="05/06/2026/" rating={5} />
       </div>
       <div className="w-full flex flex-col items-center justify-center  ">
-        <div className=" shadow-md shadow-black/40 rounded-md  flex flex-col gap-7 py-6 mx-6 px-6   ">
+        <div className=" shadow-md shadow-black/40 rounded-md  flex flex-col gap-7 py-6 mx-6 px-6   w-80">
           <h3 className="font-semibold text-black tracking-wide text-[1.3rem] ">
             Book a Table
           </h3>
@@ -141,19 +141,19 @@ function AvailableTImes() {
       <div className="flex items-center gap-4">
         <button
           type="button"
-          className=" px-6 rounded-sm border-[.1rem] border-black/20 py-2  w-26 text-[.8rem] font-semibold text-black/80 tracking-wide"
+          className=" px-6 rounded-sm border-[.1rem] border-black/20 py-2  w-26 text-[.6rem] font-semibold text-black/80 tracking-wide"
         >
           20:00
         </button>
         <button
           type="button"
-          className=" px-6 rounded-sm border-[.1rem] border-black/20 py-2  w-26 text-[.8rem] font-semibold text-black/80 tracking-wide"
+          className=" px-6 rounded-sm border-[.1rem] border-black/20 py-2  w-26 text-[.6rem] font-semibold text-black/80 tracking-wide "
         >
           21:00
         </button>
         <button
           type="button"
-          className=" px-6 rounded-sm border-[.1rem] border-black/20 py-2  w-26 text-[.8rem] font-semibold text-black/80 tracking-wide"
+          className=" px-6 rounded-sm border-[.1rem] border-black/20 py-2  w-26 text-[.6rem] font-semibold text-black/80 tracking-wide"
         >
           21:30
         </button>
