@@ -87,35 +87,37 @@ function Details() {
         <Review name="Marcus vance" date="08/06/2026/" rating={4} />
         <Review name="sophia loren" date="05/06/2026/" rating={5} />
       </div>
-      <div className="w-full shadow-md shadow-black/40 rounded-md  flex flex-col gap-7 py-6 mx-6 px-6 mr-20">
-        <h3 className="font-semibold text-black tracking-wide text-[1.3rem] ">
-          Book a Table
-        </h3>
-        <div className="flex flex-col gap-6 w-full  ">
-          <SelecUserBoard
-            ref={selectRef}
-            user={user}
-            onSetUser={onSetUser}
-            check="select"
-            title="party size"
-          />
-          <SelecUserBoard
-            ref={dateRef}
-            user={user}
-            onSetUser={onSetUser}
-            title="date"
-          />
-          <AvailableTImes />
+      <div className="w-full flex flex-col items-center justify-center  ">
+        <div className=" shadow-md shadow-black/40 rounded-md  flex flex-col gap-7 py-6 mx-6 px-6   ">
+          <h3 className="font-semibold text-black tracking-wide text-[1.3rem] ">
+            Book a Table
+          </h3>
+          <div className="flex flex-col gap-6 w-full  ">
+            <SelecUserBoard
+              ref={selectRef}
+              user={user}
+              onSetUser={onSetUser}
+              check="select"
+              title="party size"
+            />
+            <SelecUserBoard
+              ref={dateRef}
+              user={user}
+              onSetUser={onSetUser}
+              title="date"
+            />
+            <AvailableTImes />
 
-          <Button
-            title="reserve now"
-            style="bg-black/95 text-white"
-            onHandleOrder={handleOrder}
-          />
-          <OrderRight />
+            <Button
+              title="reserve now"
+              style="bg-black/95 text-white"
+              onHandleOrder={handleOrder}
+            />
+            <OrderRight />
+          </div>
         </div>
       </div>
-      <div className="w-full mt-30">
+      <div className="w-full mt-30 ">
         <Footer />
       </div>
     </div>
