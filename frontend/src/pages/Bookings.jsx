@@ -8,11 +8,16 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Button from '../components/homeComponent/Button';
 import Footer from '../components/homeComponent/Footer';
 
 function Bookings() {
+  const navigate = useNavigate();
+
+  function handleOrder() {
+    navigate('/booked/1');
+  }
   return (
     <>
       <div className="pt-25 px-6 bg-white ">
@@ -96,7 +101,11 @@ function Bookings() {
             <SelectOccassion title="occasion" />
             <SpecialRequest title="special requests (optional)" />
             <CheckBox />
-            <Button title={'book table'} style="bg-black text-white" />
+            <Button
+              title={'book table'}
+              style="bg-black text-white"
+              onHandleOrder={handleOrder}
+            />
           </div>
         </div>
       </div>

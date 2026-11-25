@@ -26,7 +26,7 @@ function RootNavigation() {
 
   useEffect(() => {
     function handleScroll() {
-      console.log('window scroll', window.scrollY);
+      // console.log('window scroll', window.scrollY);
       setIsScrolled(window.scrollY > 50);
     }
 

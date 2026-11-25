@@ -1,6 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = { dropdown: false, sign: 'Sign in', showModal: false };
+const initialState = {
+  dropdown: false,
+  sign: 'Sign in',
+  showModal: false,
+  role: 'customer',
+};
 const HomeSlice = createSlice({
   name: 'HomeSlice',
   initialState,
@@ -19,8 +24,12 @@ const HomeSlice = createSlice({
     setShowModal: (state) => {
       state.showModal = !state.showModal;
     },
+    setRole: (state, action) => {
+      state.role = action.payload;
+    },
   },
 });
 
-export const { setDropdown, setSign, setShowModal } = HomeSlice.actions;
+export const { setDropdown, setSign, setShowModal, setRole } =
+  HomeSlice.actions;
 export default HomeSlice.reducer;
